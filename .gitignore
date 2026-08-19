@@ -1,0 +1,39 @@
+# Secrets and local environment
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+secrets/
+credentials/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Ansible
+*.retry
+
+# Terraform / IaC local state
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary output / logs
+*.log
+tmp/
+temp/
+artifacts/private/
