@@ -141,4 +141,4 @@ Avoid repeatedly redesigning READMEs, dashboards, diagrams, or scripts unless th
 
 ## Current work
 
-See [`current-sprint.md`](current-sprint.md) for the active NOW / NEXT / EVIDENCE set.
+The **Notion Learning Plan is the sole live task/progress tracker**. Use GitHub for the stable roadmap and evidence, not for a second copy of current task state.
