@@ -1,6 +1,6 @@
 # Visual 52-Week Roadmap
 
-The detailed checklist lives in Notion. This page is the **one-screen mental map** of how the technical layers build on one another and where the standalone portfolio projects enter.
+The detailed checklist and live progress state live in Notion. This page is the **one-screen mental map** of how the technical layers build on one another and where the standalone portfolio projects enter.
 
 ## Phase flow
 
@@ -23,8 +23,8 @@ flowchart TB
     G --> C[GPU containers]
     N --> F[AI fabrics]
     G --> F
-    C --> K[Kubernetes GPU scheduling]
-    C --> S[Slurm GPU scheduling]
+    C --> K[Kubernetes accelerator scheduling]
+    C --> S[Slurm GPU/GRES scheduling]
     F --> K
     F --> S
     K --> O[Observability + incident response]
@@ -61,12 +61,12 @@ flowchart TB
 | Gate | What should now be demonstrable |
 |---|---|
 | **Week 6** | Administer and troubleshoot a Linux server without GUI dependence |
-| **Week 14** | Explain GPU node architecture and validate/diagnose the NVIDIA software stack |
+| **Week 14** | Explain GPU node architecture and validate/diagnose the NVIDIA software stack on a real supported Linux GPU environment |
 | **Week 20** | Trace an AI fabric and reason about rack power/cooling/interconnect constraints |
-| **Week 24** | Run and reproduce a GPU-enabled container environment |
-| **Week 30** | Schedule a GPU workload through Kubernetes |
-| **Week 34** | Schedule a GPU workload through Slurm and compare scheduler tradeoffs |
-| **Week 38** | Reconstruct a GPU/infrastructure incident from telemetry |
+| **Week 24** | Run and reproduce a GPU-enabled container environment where direct GPU access is available |
+| **Week 30** | Deploy/recover a Kubernetes workload and explain the GPU device-resource control path; schedule a real GPU workload where the selected environment supports it |
+| **Week 34** | Demonstrate Slurm scheduling and GPU/GRES behavior where real GPU access is available; compare scheduler tradeoffs |
+| **Week 38** | Reconstruct a GPU/infrastructure incident from telemetry and clearly label unsupported fault classes as synthetic/reference |
 | **Week 40** | Rebuild a useful component through repeatable automation |
 | **Week 42** | Explain the integrated architecture across layers |
 | **Week 44** | Present an interview-ready portfolio and security/private-AI story |
