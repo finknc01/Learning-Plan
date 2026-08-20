@@ -2,6 +2,9 @@
 
 This directory maps the larger standalone projects produced during the 52-week learning plan.
 
+- [Portfolio evidence index](evidence-index.md) — what the portfolio can actually prove as real artifacts accumulate.
+- [Repository metadata reference](repository-metadata.md) — intended public descriptions and topic tags.
+
 `Learning-Plan` is the hub. The substantial labs live in dedicated repositories so each can develop its own architecture, missions, evidence, failures, automation, and conclusions.
 
 The projects form one continuous infrastructure story:
