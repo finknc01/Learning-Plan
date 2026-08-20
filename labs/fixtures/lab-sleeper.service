@@ -1,0 +1,14 @@
+[Unit]
+Description=Fabricated lab sleeper service for systemd troubleshooting
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/lib/lab-sleeper/lab-sleeper.sh
+Restart=no
+User=nobody
+Group=nogroup
+Environment=LAB_SLEEPER_INTERVAL_SECONDS=10
+
+[Install]
+WantedBy=multi-user.target
