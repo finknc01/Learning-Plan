@@ -7,16 +7,16 @@ This directory maps the larger standalone projects produced during the 52-week l
 
 `Learning-Plan` is the hub. The substantial labs live in dedicated repositories so each can develop its own architecture, missions, evidence, failures, automation, and conclusions.
 
-The projects form one continuous infrastructure story:
+The projects form one continuous **learning and portfolio progression**. They do not need to share one fictional company or production environment:
 
-> **build the node → understand the node → connect the nodes → schedule the GPUs → observe failures → secure the system → design the rack → recover the cluster → plan capacity → keep storage from starving compute**
+> **build the node → understand the node → connect the nodes → run/schedule the workload → observe failures → design physical infrastructure → recover systems → plan capacity → secure sensitive workloads → defend the full architecture**
 
 ## Standalone projects
 
 ### [Phoenix-Node](https://github.com/finknc01/Phoenix-Node)
 **Story:** Project Phoenix — inherit a distrusted compute node, understand it, break it safely, repair it, automate it, and prove it can be rebuilt.
 
-**Skills:** production Linux, boot/systemd, permissions, storage, host networking, NVIDIA driver/CUDA, troubleshooting, Bash/Ansible, repeatability.
+**Skills:** production Linux, boot/systemd, permissions, storage, host networking, NVIDIA driver/CUDA, troubleshooting, automation, repeatability.
 
 **Primary schedule:** Weeks 1–6, GPU stage Weeks 11–12, automation/final rebuild Weeks 39–40.
 
@@ -35,16 +35,16 @@ The projects form one continuous infrastructure story:
 **Primary schedule:** beginner work Weeks 3–4; main campaign Weeks 15–18.
 
 ### [Scheduler-Colosseum](https://github.com/finknc01/Scheduler-Colosseum)
-**Story:** The Arena — the same accelerated workload enters Docker, Kubernetes, and Slurm under controlled rules.
+**Story:** The Arena — the same accelerated workload enters direct/containerized execution, Kubernetes, and Slurm under controlled rules.
 
-**Skills:** containers, GPU containers, Kubernetes, GPU Operator, Slurm, GRES, scheduling, failure behavior, orchestration tradeoffs.
+**Skills:** containers, GPU containers, Kubernetes, NVIDIA device-plugin/GPU Operator concepts, Slurm, GRES, scheduling, failure behavior, execution-model tradeoffs.
 
 **Primary schedule:** continuous comparison across Weeks 21–34.
 
 ### [Blackbox-GPU](https://github.com/finknc01/Blackbox-GPU)
 **Story:** Incident Nightjar — a training run already failed; build enough telemetry to reconstruct what happened after the fact.
 
-**Skills:** `nvidia-smi`, DCGM, DCGM Exporter, Prometheus, Grafana, logs, timelines, GPU health/performance telemetry, incident analysis.
+**Skills:** `nvidia-smi`, DCGM concepts, Prometheus, Grafana, logs, timelines, GPU health/performance telemetry, incident analysis.
 
 **Primary schedule:** baseline Weeks 13–14; main campaign Weeks 35–38.
 
@@ -53,14 +53,14 @@ The projects form one continuous infrastructure story:
 
 **Skills:** threat modeling, host hardening, segmentation, secrets, container boundaries, auditability, workload isolation, PPML/security boundaries.
 
-**Primary schedule:** Weeks 43–44.
+**Primary schedule:** core Missions 00–04 + Final in Weeks 43–44; audit/PPML deep-dives are stretch work.
 
 ### [Atlas-Rack](https://github.com/finknc01/Atlas-Rack)
 **Story:** Operation Atlas — design an AI rack that remains deployable as power, cooling, cabling, serviceability, redundancy, and procurement constraints change.
 
 **Skills:** rack layout, power budgets, cooling paths, interconnect/cabling, failure domains, redundancy, serviceability, architecture tradeoffs.
 
-**Primary schedule:** requirements/layout Weeks 9–10; main campaign Weeks 19–20.
+**Primary schedule:** requirements/layout Weeks 9–10; core physical-design work Weeks 19–20; procurement/final review are stretch if needed.
 
 ### [Lazarus-Cluster](https://github.com/finknc01/Lazarus-Cluster)
 **Story:** The Resurrection Trials — a cluster is not trusted until it can fail predictably and recover from source-controlled truth.
@@ -74,14 +74,14 @@ The projects form one continuous infrastructure story:
 
 **Skills:** workload characterization, GPU/VRAM sizing, power/network/storage capacity, budget tradeoffs, growth planning, Python/YAML modeling.
 
-**Primary schedule:** Weeks 7–8, 19–20, and 41–42.
+**Primary schedule:** workload deck Weeks 7–8; VRAM/power work Weeks 19–20 with network constraints as stretch; finish model Weeks 41–42.
 
 ### [Checkpoint-Rush](https://github.com/finknc01/Checkpoint-Rush)
 **Story:** Mercury Storage Incident — expensive GPUs keep going idle when jobs hit storage together, and the goal is to prove where the time disappears.
 
 **Skills:** throughput/IOPS/latency, access patterns, small-file behavior, caching, shared-storage contention, checkpoint storms, GPU idle correlation, mitigation experiments.
 
-**Primary schedule:** Weeks 3–4, 35–38, and 41–42.
+**Primary schedule:** baseline/access-pattern work Weeks 3–4; small-file/cache/shared-storage campaign Weeks 35–38; mitigation/final by Weeks 41–42 or targeted gap closure if needed.
 
 ## Project standard
 
@@ -97,6 +97,5 @@ Each project should clearly distinguish **planned work from completed evidence**
 - automation and repeatability
 - conclusions and design tradeoffs
 - production considerations
-- an explicit restart breadcrumb while work is incomplete
 
 A project is portfolio-ready when the repository can support a meaningful technical interview discussion without overstating what was actually measured or deployed.
