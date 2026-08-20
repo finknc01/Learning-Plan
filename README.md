@@ -1,6 +1,6 @@
 # Learning Plan — GPU / AI Infrastructure Engineering
 
-This repository is the public hub for a 52-week, hands-on learning program focused on **GPU / AI data-center infrastructure engineering**. The detailed task checklist lives in Notion; GitHub is used for technical artifacts, diagrams, small labs, troubleshooting records, and links to the larger standalone projects.
+This repository is the public hub for a 52-week, hands-on learning program focused on **GPU / AI data-center infrastructure engineering**. The detailed task checklist and live progress state live in Notion; GitHub is used for the stable roadmap, technical artifacts, diagrams, small labs, troubleshooting records, evidence, and links to the larger standalone projects.
 
 ## Start here
 
@@ -12,6 +12,14 @@ This repository is the public hub for a 52-week, hands-on learning program focus
 - [Small supporting labs](labs/README.md)
 - [Detailed Learning Plan in Notion](https://app.notion.com/p/3c182d407ca18062b805c0689c5829d8?pvs=204)
 
+## Source-of-truth rule
+
+- **Notion** answers: *What tasks are active, complete, deferred, or next?*
+- **Learning-Plan** answers: *How does the year fit together and what evidence exists?*
+- **Standalone project repositories** answer: *What was actually built, measured, modeled, broken, diagnosed, or concluded?*
+
+GitHub intentionally does not maintain a second live “current sprint” tracker.
+
 ## Portfolio projects
 
 | Project | Engineering story | Status |
@@ -19,7 +27,7 @@ This repository is the public hub for a 52-week, hands-on learning program focus
 | [Phoenix-Node](https://github.com/finknc01/Phoenix-Node) | Build, break, diagnose, automate, and rebuild a GPU-ready Linux node | **Active** |
 | [Topology-Faultline](https://github.com/finknc01/Topology-Faultline) | Diagnose performance differences caused by NUMA/PCIe/device locality | Planned |
 | [Fabric-Faultline](https://github.com/finknc01/Fabric-Faultline) | Trace and repair increasingly difficult AI-cluster network failures | Planned |
-| [Scheduler-Colosseum](https://github.com/finknc01/Scheduler-Colosseum) | Compare Docker, Kubernetes, and Slurm using the same workload | Planned |
+| [Scheduler-Colosseum](https://github.com/finknc01/Scheduler-Colosseum) | Compare Docker, Kubernetes, and Slurm execution models using the same workload | Planned |
 | [Blackbox-GPU](https://github.com/finknc01/Blackbox-GPU) | Reconstruct GPU incidents from telemetry, logs, and timelines | Planned |
 | [Private-AI-Foundry](https://github.com/finknc01/Private-AI-Foundry) | Design defensible infrastructure for sensitive/private AI workloads | Planned |
 | [Atlas-Rack](https://github.com/finknc01/Atlas-Rack) | Design an AI rack under power, cooling, cabling, and failure constraints | Planned |
@@ -27,18 +35,18 @@ This repository is the public hub for a 52-week, hands-on learning program focus
 | [Silicon-Tetris](https://github.com/finknc01/Silicon-Tetris) | Model GPU, VRAM, power, network, storage, budget, and growth constraints | Planned |
 | [Checkpoint-Rush](https://github.com/finknc01/Checkpoint-Rush) | Prove when storage behavior is starving expensive compute | Planned |
 
-The projects form one continuous infrastructure story:
+The projects form one continuous **learning and portfolio progression**, even though individual labs use different fictional organizations and incidents:
 
-> **build the node → understand the node → connect the nodes → schedule the GPUs → observe failures → secure the system → design the rack → recover the cluster → plan capacity → feed the compute**
+> **build the node → understand the node → connect the nodes → run/schedule the workload → observe failures → design physical infrastructure → recover systems → plan capacity → secure sensitive workloads → defend the full architecture**
 
 ## 52-week technical progression
 
 | Weeks | Focus |
 |---|---|
 | 1–6 | Linux administration, storage, host networking, troubleshooting, Bash |
-| 7–14 | NVIDIA AI infrastructure, GPU architecture, CUDA, DCGM diagnostics |
+| 7–14 | NVIDIA AI infrastructure, GPU architecture, CUDA, diagnostics |
 | 15–20 | Ethernet, fiber/optics, InfiniBand, RDMA/RoCE, rack power and cooling |
-| 21–30 | Docker, NVIDIA Container Toolkit, Kubernetes, GPU Operator |
+| 21–30 | Docker, NVIDIA Container Toolkit, Kubernetes, accelerator scheduling concepts |
 | 31–38 | Slurm/HPC scheduling, Prometheus/Grafana, GPU observability |
 | 39–44 | Python/Ansible automation, recovery, integration, secure/private AI |
 | 45–52 | Applications, technical interviews, and targeted gap closure |
@@ -80,8 +88,8 @@ See [`portfolio/evidence-index.md`](portfolio/evidence-index.md) for the cross-p
 - **Week 14:** NVIDIA GPU architecture, administration, and diagnostics
 - **Week 20:** AI networking plus rack power/cooling understanding
 - **Week 24:** GPU-enabled containers
-- **Week 30:** Kubernetes GPU workloads
-- **Week 34:** Slurm GPU scheduling
+- **Week 30:** Kubernetes scheduling/recovery plus a defensible GPU resource-control path; schedule a real GPU workload where the selected environment supports it
+- **Week 34:** Slurm GPU scheduling where real GPU access is available, plus scheduler tradeoff reasoning
 - **Week 38:** GPU observability and incident reconstruction
 - **Week 40:** repeatable infrastructure automation and node rebuild
 - **Week 42:** integrated, reproducible architecture story
