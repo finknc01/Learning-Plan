@@ -2,13 +2,16 @@
 
 This directory keeps the public, portfolio-oriented view of the 52-week learning plan.
 
-The detailed canonical checklist remains in Notion. GitHub is intentionally organized around **what is active now, when the standalone labs are used, and what evidence has been produced**.
+The detailed canonical checklist remains in Notion. GitHub is intentionally organized around **what is active now, how the system builds over time, when the standalone labs are used, and what evidence has been produced**.
 
 ## Start here
 
-- [`current-sprint.md`](current-sprint.md) — the one primary mission, supporting concept, and evidence target that are active now.
-- [`execution-system.md`](execution-system.md) — the focus-friendly study workflow: Now/Next/Later, session sizes, minimum viable week, breadcrumbs, and no catch-up debt.
-- [`lab-schedule.md`](lab-schedule.md) — where all ten standalone story-driven labs enter and re-enter the 52-week curriculum.
+- [`visual-roadmap.md`](visual-roadmap.md) — visual phase map, skill dependency map, project timeline, and milestone gates.
+- [`current-sprint.md`](current-sprint.md) — the one primary mission, supporting concept, and evidence target active now.
+- [`execution-system.md`](execution-system.md) — Now/Next/Later, session sizes, minimum viable week, breadcrumbs, and no catch-up debt.
+- [`lab-schedule.md`](lab-schedule.md) — where all ten standalone story-driven labs enter and re-enter the curriculum.
+- [`../labs/README.md`](../labs/README.md) — short 20–60 minute micro-labs for supporting concepts.
+- [`../diagrams/README.md`](../diagrams/README.md) — high-level architecture diagrams used across the plan.
 
 ## Milestone snapshots
 
