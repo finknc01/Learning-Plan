@@ -17,7 +17,7 @@ The index is intentionally conservative. A project being planned, documented, or
 
 | Project | Skill story to prove | Current evidence state | Best eventual artifacts |
 |---|---|---|---|
-| [Phoenix-Node](https://github.com/finknc01/Phoenix-Node) | Linux/GPU node administration, troubleshooting, and rebuild | **Planned — active project, ready to begin Mission 00** | inventory, service incident, storage/network fault, GPU validation, automation, rebuild report |
+| [Phoenix-Node](https://github.com/finknc01/Phoenix-Node) | RHEL/GPU node administration, troubleshooting, and rebuild | Planned | inventory, service/SELinux incident, storage/network fault, GPU validation, automation, rebuild report |
 | [Topology-Faultline](https://github.com/finknc01/Topology-Faultline) | NUMA/PCIe/GPU/NIC/NVMe locality reasoning | Planned | real `lspci`/NUMA map, topology diagram, locality experiments, modeled DGX/HGX case |
 | [Fabric-Faultline](https://github.com/finknc01/Fabric-Faultline) | evidence-first networking and packet-path troubleshooting | Planned | namespace configs, packet captures, incident reports, topology diagrams, throughput/loss experiments |
 | [Scheduler-Colosseum](https://github.com/finknc01/Scheduler-Colosseum) | Docker/Kubernetes/Slurm workload-placement tradeoffs | Planned | workload baseline, manifests/job scripts, allocation evidence, failure comparison, final scorecard |
@@ -46,7 +46,7 @@ Before linking an artifact here, verify that it answers most of these questions:
 
 As the portfolio develops, prioritize a smaller number of strong artifacts over dozens of screenshots. Particularly useful interview evidence will include:
 
-1. a Linux incident report with a clear evidence chain;
+1. a RHEL incident report with a clear evidence chain;
 2. an evidence-backed hardware/topology diagram;
 3. a packet-path/network RCA;
 4. a real NVIDIA driver/CUDA/GPU validation record;
