@@ -10,7 +10,7 @@ A boring internal service was healthy yesterday. Today the application team says
 
 ## Mission
 
-Choose a harmless service in a disposable Linux VM. Record its healthy state, stop it deliberately, then diagnose the failure **without starting it immediately**.
+Use the supplied harmless sleeper fixture or another harmless service in a disposable **RHEL VM**. Record its healthy state, stop it deliberately, then diagnose the failure **without starting it immediately**.
 
 ### Investigate
 
