@@ -6,7 +6,7 @@ The detailed checklist and live progress state live in Notion. This page is the 
 
 ```mermaid
 flowchart LR
-    P1[Weeks 1–6<br/>Linux foundation] --> P2[Weeks 7–14<br/>GPU infrastructure]
+    P1[Weeks 1–6<br/>RHEL foundation] --> P2[Weeks 7–14<br/>GPU infrastructure]
     P2 --> P3[Weeks 15–20<br/>AI networking + rack]
     P3 --> P4[Weeks 21–30<br/>Containers + Kubernetes]
     P4 --> P5[Weeks 31–38<br/>Slurm + observability]
@@ -18,7 +18,7 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-    L[Linux + troubleshooting] --> G[GPU driver / CUDA / diagnostics]
+    L[RHEL + troubleshooting] --> G[GPU driver / CUDA / diagnostics]
     L --> N[Networking fundamentals]
     G --> C[GPU containers]
     N --> F[AI fabrics]
@@ -38,7 +38,7 @@ flowchart TB
 
 ```mermaid
 flowchart TB
-    W1[1–6 Linux] --- PHX[Phoenix-Node]
+    W1[1–6 RHEL] --- PHX[Phoenix-Node]
     W2[7–14 GPU] --- TOP[Topology-Faultline]
     W2 --- BLK0[Blackbox-GPU baseline]
     W3[15–20 Network / rack] --- FAB[Fabric-Faultline]
@@ -60,8 +60,8 @@ flowchart TB
 
 | Gate | What should now be demonstrable |
 |---|---|
-| **Week 6** | Administer and troubleshoot a Linux server without GUI dependence |
-| **Week 14** | Explain GPU node architecture and validate/diagnose the NVIDIA software stack on a real supported Linux GPU environment |
+| **Week 6** | Administer and troubleshoot a RHEL server without GUI dependence |
+| **Week 14** | Explain GPU node architecture and validate/diagnose the NVIDIA software stack on a real supported RHEL GPU environment |
 | **Week 20** | Trace an AI fabric and reason about rack power/cooling/interconnect constraints |
 | **Week 24** | Run and reproduce a GPU-enabled container environment where direct GPU access is available |
 | **Week 30** | Deploy/recover a Kubernetes workload and explain the GPU device-resource control path; schedule a real GPU workload where the selected environment supports it |
