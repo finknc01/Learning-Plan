@@ -6,11 +6,11 @@
 
 ## Briefing
 
-An application reports “CUDA unavailable.” That statement is not a diagnosis. The GPU might be invisible to Linux, the driver may be broken, the runtime may be mismatched, or the application may simply be using the wrong environment.
+An application reports “CUDA unavailable.” That statement is not a diagnosis. The GPU might be invisible to RHEL, the driver may be broken, the runtime may be mismatched, or the application may simply be using the wrong environment.
 
 ## Mission
 
-On the GPU-capable environment you are using for the plan, build a dependency ladder and validate each boundary separately.
+On the direct-access **RHEL GPU environment** selected for the plan, build a dependency ladder and validate each boundary separately.
 
 Possible evidence:
 
@@ -27,9 +27,9 @@ Also validate from the framework/application layer when available.
 ## Dependency ladder
 
 ```text
-PCIe device visible
+PCIe device visible to RHEL
   ↓
-kernel driver/module
+NVIDIA kernel driver/module
   ↓
 user-space driver libraries
   ↓
@@ -44,7 +44,7 @@ Write three hypothetical symptoms and identify the **lowest layer you would test
 
 ## Evidence to save
 
-- dependency ladder annotated with your actual environment
+- dependency ladder annotated with your actual RHEL environment
 - validation command/output at each available layer
 - one compatibility note distinguishing host driver from toolkit/runtime
 
