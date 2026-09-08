@@ -8,7 +8,7 @@ When a lab overlaps a weekly objective, use the lab mission as the hands-on exer
 
 | Project | When to work on it | Role in the plan |
 |---|---|---|
-| [Phoenix-Node](https://github.com/finknc01/Phoenix-Node) | **Weeks 1–6**, GPU stage **11–12**, automation/final rebuild **39–40** | Linux node administration, GPU host setup, troubleshooting, automation, repeatability |
+| [Phoenix-Node](https://github.com/finknc01/Phoenix-Node) | **Weeks 1–6**, GPU stage **11–12**, automation/final rebuild **39–40** | RHEL node administration, GPU host setup, troubleshooting, automation, repeatability |
 | [Topology-Faultline](https://github.com/finknc01/Topology-Faultline) | **Weeks 9–10**, final case by **13–14** | NUMA/PCIe/GPU/NIC/NVMe topology and locality reasoning |
 | [Fabric-Faultline](https://github.com/finknc01/Fabric-Faultline) | preview **3–4**, main campaign **15–18** | networking fundamentals through AI fabric concepts and failure isolation |
 | [Atlas-Rack](https://github.com/finknc01/Atlas-Rack) | requirements/layout **9–10**, core campaign **19–20** | rack design, power, cooling, cabling, redundancy, serviceability; procurement/final review are stretch if needed |
@@ -21,20 +21,20 @@ When a lab overlaps a weekly objective, use the lab mission as the hands-on exer
 
 ## Schedule by learning block
 
-### Weeks 1–2 — Ubuntu server administration
+### Weeks 1–2 — RHEL server administration
 **Core:** [Phoenix-Node](https://github.com/finknc01/Phoenix-Node) Missions 00–01
 
-Inventory the environment and investigate the boot chain while learning Linux fundamentals.
+Inventory the environment and investigate the boot chain while learning RHEL fundamentals. Use RHEL 10 for the self-directed lab unless your HPC team uses another supported RHEL major version; for mentored work, mirror the team's supported version.
 
-### Weeks 3–4 — Storage, host networking, enterprise Linux
+### Weeks 3–4 — RHEL storage and host networking
 
-- **Core — Phoenix-Node:** Missions 02–04 — access control, storage, host networking
+- **Core — Phoenix-Node:** Missions 02–04 — access control, SELinux, storage, NetworkManager/firewalld, host networking
 - **Supporting — Fabric-Faultline:** Missions 00–01 — follow the packet; make two hosts communicate
 - **Supporting — Checkpoint-Rush:** Missions 00–01 — storage baseline and access patterns
 
 Phoenix is the priority. If the block is full, defer the supporting networking/storage preview work to the later dedicated blocks rather than rushing all projects.
 
-### Weeks 5–6 — Linux troubleshooting and Bash
+### Weeks 5–6 — RHEL troubleshooting and Bash
 **Core:** Phoenix-Node checkpoint
 
 Finish the early node missions, deliberately reproduce at least one safe failure, and document evidence-first troubleshooting.
@@ -54,7 +54,7 @@ Use real laptop measurements where possible and clearly label production-scale t
 ### Weeks 11–12 — GPU Linux setup
 **Core:** Phoenix-Node Mission 05
 
-Bring the node from Linux host to a validated NVIDIA driver/CUDA/GPU state using a **real Linux GPU administration environment with direct NVIDIA GPU access**. The Ubuntu VM remains useful for ordinary Linux work, but Linux driver-installation evidence requires native/direct access on a supported Linux GPU host.
+Bring the node from RHEL host to a validated NVIDIA driver/CUDA/GPU state using a **real RHEL GPU administration environment with direct NVIDIA GPU access**. A normal RHEL VM remains useful for ordinary host-administration work, but Linux driver-installation evidence requires native/direct access on a supported RHEL GPU host.
 
 ### Weeks 13–14 — GPU diagnostics
 
@@ -97,7 +97,7 @@ Run the same workload through Kubernetes and document what orchestration adds.
 ### Weeks 27–28 — Accelerator scheduling in Kubernetes
 **Core:** Scheduler-Colosseum Mission 03
 
-Understand the device-resource control path and test real GPU scheduling where the selected Linux/Kubernetes environment supports it. If local GPU integration is not practical, preserve a clearly labeled modeled control-path/failure case. MIG remains modeled/reference unless the chosen GPU supports MIG. Full GPU Operator deployment is an optional supported-hardware/cloud extension.
+Understand the device-resource control path and test real GPU scheduling where the selected RHEL/Kubernetes environment supports it. If local GPU integration is not practical, preserve a clearly labeled modeled control-path/failure case. MIG remains modeled/reference unless the chosen GPU supports MIG. Full GPU Operator deployment is an optional supported-hardware/cloud extension.
 
 ### Weeks 29–30 — Kubernetes operations and repeatability
 **Core:** [Lazarus-Cluster](https://github.com/finknc01/Lazarus-Cluster) early resilience trials
@@ -107,7 +107,7 @@ Begin controlled failures and distinguish service recovery from full system reco
 ### Weeks 31–32 — Slurm fundamentals
 **Core:** Scheduler-Colosseum Mission 04
 
-Run the same workload through Slurm using the same evidence standard. Use real GPU GRES where the selected Linux GPU environment permits it; otherwise document the scheduling model honestly.
+Run the same workload through Slurm using the same evidence standard. Use real GPU GRES where the selected RHEL GPU environment permits it; otherwise document the scheduling model honestly.
 
 ### Weeks 33–34 — Scheduler comparison and cluster failure
 
