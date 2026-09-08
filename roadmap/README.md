@@ -8,7 +8,6 @@ The detailed canonical checklist and live progress state remain in Notion. GitHu
 
 - [`visual-roadmap.md`](visual-roadmap.md) — visual phase map, skill dependency map, project timeline, and milestone gates.
 - [`lab-schedule.md`](lab-schedule.md) — where all ten standalone story-driven labs enter and re-enter the curriculum.
-- [`execution-system.md`](execution-system.md) — stable guidance for session sizing, evidence, breadcrumbs, and avoiding unfinished-work overload; it is not a live progress tracker.
 - [`../labs/README.md`](../labs/README.md) — short 20–60 minute micro-labs for supporting concepts.
 - [`../diagrams/README.md`](../diagrams/README.md) — high-level architecture diagrams used across the plan.
 - [Canonical task checklist in Notion](https://app.notion.com/p/3c182d407ca18062b805c0689c5829d8?pvs=204) — the only source for current/next/completed task state.
