@@ -5,7 +5,7 @@ These files provide harmless, synthetic starting material for supporting labs. T
 ## `lab-sleeper.sh` + `lab-sleeper.service`
 Used by **Micro-Lab 01 — The Sleeping Service** so the exercise does not depend on a random system service.
 
-Suggested setup in a disposable Ubuntu VM:
+Suggested setup in a disposable RHEL VM:
 
 ```bash
 sudo install -d -m 0755 /usr/local/lib/lab-sleeper
