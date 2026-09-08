@@ -16,7 +16,7 @@ The detailed canonical checklist and live progress state remain in Notion. GitHu
 
 As milestones are reached, add concise evidence-oriented summaries such as:
 
-- `week-06-linux-gate.md`
+- `week-06-rhel-gate.md`
 - `week-14-gpu-administration.md`
 - `week-20-ai-networking-and-rack.md`
 - `week-24-gpu-containers.md`
