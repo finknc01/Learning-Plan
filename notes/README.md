@@ -15,8 +15,8 @@ Prefer diagrams, comparison tables, and short explanations over copied course no
 
 ## Planned topic areas
 
-- Linux internals and system administration
-- storage and networking fundamentals
+- RHEL internals and system administration
+- RHEL storage, networking, SELinux, and firewalld
 - NVIDIA GPU architecture and CUDA software stack
 - PCIe / NUMA / NVLink / NVSwitch
 - Ethernet / InfiniBand / RDMA / RoCE
